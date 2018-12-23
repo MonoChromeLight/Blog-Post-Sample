@@ -5,8 +5,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
 <body>
+  <div class="dialog">
+     
+  
+   <div class="login-form">
+         <form action="">
+         <h4>Вход в системата</h4>
+          <input type="text" class="user" value="Потребителско име">
+          <input type="text" class="password" value="Парола">
+          <button id="btn-login" class="form-btn">ВХОД</button>
+          <button id="btn-register" class="form-btn">Регистрация</button>
+          </form>
+          <div class="form-addition">
+              <span>Запази паролата</span>
+                <div class="toggle-group">
+                    <input type="checkbox" name="on-off-switch" id="on-off-switch" checked="" tabindex="1">
+                    <label for="on-off-switch">
+                        <span class="aural">Show:</span> 
+                    </label>
+                    <div class="onoffswitch pull-right" aria-hidden="true">
+                        <div class="onoffswitch-label">
+                            <div class="onoffswitch-inner"></div>
+                            <div class="onoffswitch-switch"></div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+    </div>
    <div class="container">
        <div class="row">
            <div class="col-md-2">
@@ -21,7 +50,7 @@
                </div>
                <div class="row">
                    <ul class="main-menu">
-                       <li class="menu-item">^</li>
+                       <li class="menu-item"><i class="fa fa-home"></i></li>
                        <li class="menu-item">
                            <h4>За ЕНПР</h4>
                            <div class="menu-sub-head">За асоциацията</div>
@@ -83,26 +112,78 @@
                    <p>Миналата година съседи ни бяха Русия и Бурунди. Сега Русия е "избягала" напред - на 45-та позиция.
                    Световният икономически форум (World Economic Forum, WEF) е международна неправителствена организация със седалище в Женева, Швейцария.</p>
         </div>
-        
-        <div class="row"> 
+        <div class="social-media">
+            <div class="row"> 
             <div id="facebook"></div>
             <div id="share"></div>
             <div id="g-plus"></div>
             <div id="twitter"></div>
         </div>
+        </div>
+        
         
         <div class="similar-posts">
             <div class="row">
                 <ul>
-                    <li class="post col-md-4">
-                    <img src="assets/post1.png" alt="">
-                    <h4>Франчайзинг - успешенбизнес старт или едно ново начало</h4>
-                    <span class="date">25.07.2015г.</span>
+                    <li class="post cust-col-md-4">
+                        <img src="assets/post1.png" alt="">
+                        <div class="post-small">
+                            <h4>Франчайзинг - успешенбизнес старт или едно ново начало</h4>
+                            <span class="date">25.07.2015г.</span>
+                        </div>
+                    </li>
+                    <li class="post cust-col-md-4">
+                        <img src="assets/post1.png" alt="">
+                        <div class="post-small">
+                            <h4>Франчайзинг - успешенбизнес старт или едно ново начало</h4>
+                            <span class="date">25.07.2015г.</span>
+                        </div>
+                    </li>
+                    <li class="post cust-col-md-4">
+                        <img src="assets/post1.png" alt="">
+                        <div class="post-small">
+                            <h4>Франчайзинг - успешенбизнес старт или едно ново начало</h4>
+                            <span class="date">25.07.2015г.</span>
+                        </div>
+                    </li>
+                    <li class="post cust-col-md-4">
+                        <img src="assets/post1.png" alt="">
+                        <div class="post-small">
+                            <h4>Франчайзинг - успешенбизнес старт или едно ново начало</h4>
+                            <span class="date">25.07.2015г.</span>
+                        </div>
                     </li>
                     
                 </ul>
             </div>
         </div>
+        <footer id="footer">
+            <ul class="footer-wigdets">
+                <li>Logo</li>
+                <li>
+                    <p><a href="#">За ЕНРП</a></p>
+                    <p><a href="#">Ползи от членството</a></p>
+                    <p><a href="#">Цели и мисия</a></p>
+                    <p><a href="#">Нашите резултати</a></p>
+                </li>
+                <li>
+                    <p><a href="#">Структура на управление</a></p>
+                    <p><a href="#">Партньотсва</a></p>
+                    <p><a href="#">ЕНРП в медиите</a></p>
+                    <p><a href="#">Свържете се с нас</a></p>
+                </li>
+                <li>
+                    <p><i class="fa fa-map-marker"></i> Професионална асоциация по европейски и 
+                    национални програми за развитие 
+                    София 1234, ул. Лъчезар Станчев x,сграда x, ет. xx 
+                    Работно време: 8:30 - 17:00</p>
+                </li>
+                <li>
+                    <p><i class="fa fa-envelope-o"></i> office@enpr.bg</p>
+                    <p><i class="fa fa-phone"></i> 02/869 789 | 0899 066 105</p>
+                </li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
